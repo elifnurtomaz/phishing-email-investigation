@@ -1,0 +1,31 @@
+From: Security Team <alerts@sender.example>
+To: Analyst <analyst@example.net>
+Return-Path: <bounce@sender.example>
+Subject: Synthetic Email - Account Notification
+Date: Thu, 12 Nov 2026 10:00:00 +0300
+Message-ID: <synthetic-001@sender.example>
+MIME-Version: 1.0
+Authentication-Results: mx.sender.example; spf=pass smtp.mailfrom=bounce@sender.example; client-ip=192.0.2.10
+X-Sender-IP: 192.0.2.10
+Content-Type: multipart/alternative; boundary="SYNTHETIC-BOUNDARY"
+
+--SYNTHETIC-BOUNDARY
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+This is a synthetic email created for software testing.
+Please review the account information using the HTML version.
+
+--SYNTHETIC-BOUNDARY
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+<html>
+<body>
+<p>This is a synthetic test email.</p>
+<a href="https://login.example.com/account">Review account</a>
+<img src="https://images.example.net/logo.png" alt="Test logo">
+</body>
+</html>
+
+--SYNTHETIC-BOUNDARY--

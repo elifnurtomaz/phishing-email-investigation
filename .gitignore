@@ -1,0 +1,26 @@
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# IDE and editor settings
+.vscode/
+.idea/
+
+# Environment variables and secrets
+.env
+
+# Original email samples - do not publish
+samples/*.eml
+
+# Reports generated from real email samples
+reports/*.csv
+reports/*.md
+
+# Investigation data from real email samples
+iocs/*.csv
+analysis/*.md
