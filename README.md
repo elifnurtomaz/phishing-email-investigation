@@ -84,7 +84,7 @@ The extracted indicators are exported into CSV format for further investigation 
 
 \### Automated Testing
 
-\- Multiple email sample testing
+\- Synthetic EML fixture testing
 
 \- Indicator validation
 
@@ -122,27 +122,21 @@ phishing-email-investigation/
 
 │
 
-├── analysis/
+├── .gitignore
 
-├── iocs/
-
-├── samples/
+├── README.md
 
 ├── scripts/
 
 │   └── extract\_iocs.py
 
-├── reports/
+└── tests/
 
-├── tests/
+&#x20;   ├── fixtures/
 
-│   ├── fixtures/
+&#x20;   │   └── synthetic-email-01.eml
 
-│   │   └── synthetic-email-01.eml
-
-│   └── test\_extractor.py
-
-└── README.md
+&#x20;   └── test\_extractor.py
 
 
 
@@ -267,3 +261,4 @@ Current test status: 5 tests passed.
 \- Automated HTML report generation
 
 \- Integration with threat intelligence APIs
+
